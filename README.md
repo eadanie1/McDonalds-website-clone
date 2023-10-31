@@ -16,4 +16,4 @@ Certain featues that I have focused on, apart from the general HTML and CSS, are
 
 ## Additional notes
 
-The CSS styling is contained in a single '.css' file, but is separated with comments as headings of each new section.
+The CSS styling is contained in a single '.css' file, but is separated with comments as headings of each new section for easier overview.
