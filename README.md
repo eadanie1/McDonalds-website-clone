@@ -1,4 +1,4 @@
-# HTML/CSS website clone project no 2 (McDonald's)
+# HTML/CSS website clone project (McDonald's)
 
 Welcome to my McDonald's website clone project, using HTML and CSS.
 
