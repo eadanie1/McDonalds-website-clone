@@ -10,7 +10,7 @@ This clone is based on the URL:(https://www.mcdonalds.com/us/en-us/about-our-foo
 
 I have structured the website using the appropriate layout, such as grid or flexbox, mainly by oberving the page and tried to limit my usage of Chrome DevTools to the bare minimums such as font-sizes, exact background color codes etc.
 
-### Special CSS features
+## Special CSS features
 
 Certain featues that I have focused on, apart from the general HTML and CSS, are button :hover and :active functions, as well as tooltips for the first three links in the main body content. Media queries have been added for a responsive design to adjust to different screen sizes. 
 
