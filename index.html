@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>McDonald&#39;s Chef and Food Experts &#124; McDonald&#39;s</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="icon" type="image" 
+        href="icons/icons8-mcdonald-48.png">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-logo-container">
+                    <a href="https://www.mcdonalds.com/us/en-us.html">
+                        <img src="icons/arches-logo_108x108.jpg" class="arches-header-logo">
+                    </a>    
+                    <a href="">
+                        <img src="icons/hamburger-menu.png" class="hamburger-menu">
+                    </a>
+                </div>
+                <div class="header-main-links-container">
+                    <div class="top-header-links-container">
+                        <div class="top-left-header-links-container">
+                            <a href="" class="header-top-links">
+                                Language
+                                <img src="icons/downarrow.png" 
+                                class="down-arrow-small-icon">
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/mcdonalds-email-signup.html" 
+                            class="header-top-links">
+                                Sign Up for Email
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/mcdonalds-careers.html" 
+                            class="header-top-links">
+                                Careers
+                            </a>
+                        </div>    
+                        <div class="top-right-header-links-container">
+                            <a href="https://www.mcdonalds.com/us/en-us/search-results.html" 
+                            class="search-link header-top-links">
+                                <img src="icons/search-icon.png" 
+                                class="search-icon">
+                                <div class="link-text">
+                                    Search
+                                </div>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/restaurant-locator.html" 
+                            class="location-link header-top-links">
+                                <img src="icons/location-pin.png" 
+                                class="location-pin-icon">
+                                <div class="link-text">
+                                    Change your Location
+                                </div>
+                            </a>
+                            <button class="order-now-button">
+                                Order Now
+                                <div class="overlay">
+                                    <div class="modal">
+                                        <div class="modal-title">
+                                            Earn points on delivery or pickup via the app
+                                        </div>
+                                        <div>
+                                            Or&#44; please select your McDelivery option
+                                        </div>
+                                        <div class="modal-radio-grid">
+                                            <div>
+                                                <img src="icons/McdAppImage.jpeg" class="modal-icons">
+                                                <div class="radio-title">
+                                                    MyMcDonald&#39;s
+                                                </div>
+                                                <input type="radio" class="radio-button">
+                                            </div>
+                                            <div>
+                                                <img src="icons/UberEats.jpeg" class="modal-icons">
+                                                <div class="radio-title">
+                                                    UberEats
+                                                </div>
+                                                <input type="radio" class="radio-button">
+                                            </div>
+                                            <div>
+                                                <img src="icons/DoorDash.jpeg" class="modal-icons">
+                                                <div class="radio-title">
+                                                    DoorDash
+                                                </div>
+                                                <input type="radio" class="radio-button">
+                                            </div>
+                                            <div>
+                                                <img src="icons/Grubhub_Logo.jpeg" class="modal-icons">
+                                                <div class="radio-title">
+                                                    Grubhub
+                                                </div>
+                                                <input type="radio" class="radio-button">
+                                            </div>
+                                            <div>
+                                                <img src="icons/Postmates.jpeg" class="modal-icons">
+                                                <div class="radio-title">
+                                                    Postmates
+                                                </div>
+                                                <input type="radio" class="radio-button">
+                                            </div>
+                                        </div>
+                                        <div class="modal-disclaimer">
+                                            You are leaving McDonald&#39;s to visit a site not 
+                                            hosted by McDonald&#39;s. Please 
+                                            <span class="modal-faded">
+                                                review the third-party&#39;s privacy policy, 
+                                                accessibility policy, and terms. McDonald&#39;s
+                                            </span>
+                                            <div class="modal-read-more">
+                                                Read More
+                                                <img src="icons/downarrow.png" class="modal-downarrow">
+                                            </div>
+                                            <div class="flexbox-modal-fake-buttons"><!--These are not actual buttons 
+                                            as I noticed it interfered with the existing order now button, and after 
+                                            ChatGPT-ing it, I was told this can be achieved by JavaScript, and since 
+                                            not a target for this clone, I'll just style them as divs instead-->
+                                                <div class="modal-button1">
+                                                    Cancel
+                                                </div>
+                                                <div class="modal-button2">
+                                                    Continue
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bottom-header-links-container">
+                        <ul>
+                            <li class="header-bottom-links">
+                                Our Menu
+                                <img src="icons/downarrow.png" class="down-arrow-large-icon">
+                            </li>
+                            <li class="header-bottom-links">
+                                <a href="https://www.mcdonalds.com/us/en-us/download-app.html">
+                                    Download App
+                                </a>
+                            </li>
+                            <li class="header-bottom-links">
+                                <a href="https://www.mcdonalds.com/us/en-us/mymcdonalds.html">
+                                    MyMcDonald&#39;s Rewards
+                                </a>
+                            </li>
+                            <li class="header-bottom-links">
+                                <a href="https://www.mcdonalds.com/us/en-us/deals.html">
+                                    Excusive Deals
+                                </a>
+                            </li>
+                            <li class="header-bottom-links">
+                                <a href="https://www.mcdonalds.com/us/en-us/about-our-food.html">
+                                    About Our Food
+                                </a>
+                            </li>
+                            <li class="header-bottom-links">
+                                <a href="https://www.mcdonalds.com/us/en-us/restaurant-locator.html">
+                                    Locate
+                                </a>
+                            </li>
+                            <li class="header-bottom-links">
+                                <a href="https://www.mcdonalds.com/us/en-us/arch-card.html">
+                                    Gift Cards
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-flexbox-container">
+            <main class="main-content-container">
+                <h1>
+                    Meet Our Food Experts
+                </h1>
+                <div class="main-photo">
+                    <img src="images/FoodExperts_Hero_1260x560_Desktop_hero-desktop.jpeg" 
+                    class="food-experts-main-image">
+                </div>
+                <div class="experts-info-text">
+                    Our food experts are more than just pros at their craft&#46; 
+                    They are people who care about the food you eat and bring 
+                    innovation into our kitchens&#46;
+                </div>
+                <section class="triple-grid-container">
+                    <div>
+                        <img src="images/Our_Chefs_3col_760x508_3-column-desktop.jpeg" 
+                        class="grid-image">
+                        <div class="grid-title">
+                            Our Chefs
+                        </div>
+                        <div class="grid-description">
+                            Everyday&#44; culinary masters are cooking up 
+                            new tastes in our kitchens&#46;
+                        </div>
+                        <a href="https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-food-experts/our-chefs.html">
+                            <button class="grid-buttons-media">
+                            Meet Our Chefs
+                            </button>
+                        </a>   
+                    </div>
+                    <div>
+                        <img src="images/Cynthia_G_3Col_376x252_Desktop_3-column-desktop.jpeg" 
+                        class="grid-image">
+                        <div class="grid-title">
+                            Our Dietitians
+                        </div>
+                        <div class="grid-description">
+                            Get to know our Registered Dietitian Nutritionists who 
+                            add a different type of value to your meal&#46;
+                        </div>  
+                        <a href="https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-food-experts/our-nutritionists.html">
+                            <button class="grid-buttons-media">
+                                Meet Our Dietitians
+                            </button>
+                        </a>
+                    </div>
+                    <div>
+                        <img src="images/Suppliers_3Col_3-column-desktop.jpeg" 
+                        class="grid-image">
+                        <div class="grid-title">
+                            Supplier Stories
+                        </div> 
+                        <div class="grid-description">
+                            Meet some of the people who provide the ingredients for 
+                            your favorite menu items&#46;
+                        </div>  
+                        <a href="https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers.html">
+                            <button class="grid-buttons-media">
+                                See Supplier Stories
+                            </button>
+                        </a>
+                    </div>
+                </section>
+                <div class="buttons-triple-grid">
+                    <div>
+                        <a href="https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-food-experts/our-chefs.html">
+                            <button class="grid-buttons">
+                                Meet Our Chefs
+                            </button>   
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-food-experts/our-nutritionists.html">
+                            <button class="grid-buttons">
+                                Meet Our Dietitians
+                            </button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers.html">
+                            <button class="grid-buttons">
+                                See Supplier Stories
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <section class="unordered-list-flexbox">
+                    <div>
+                        <div class="list-header">
+                            <div>About Us</div>
+                            <img src="icons/plussign.png" class="plussign">
+                        </div>
+                        <ul>
+                            <a href="https://www.mcdonalds.com/us/en-us/about-us.html">
+                                <li>
+                                    About Us Overview
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/about-us/leadership-team.html">
+                                <li>
+                                    Leadership Team
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/about-us/values-in-action.html">
+                                <li>
+                                    Values In Action
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/us-franchising.html">
+                                <li>
+                                    Franchise Info
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/about-us/recalls.html">
+                                <li>
+                                    Recalls &#38; Alerts
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/about-us/franchising/real-estate.html">
+                                <li>
+                                    Real Estate
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/accessibility.html">
+                                <li>
+                                    Accessibility
+                                </li>
+                            </a>
+                            <a href="https://corporate.mcdonalds.com/corpmcd/investors.html">
+                                <li>
+                                    Investor Relations
+                                </li>
+                            </a>
+                            <a href="https://corporate.mcdonalds.com/corpmcd/our-stories.html">
+                                <li>
+                                    News &#38; Notifications
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="list-header">
+                            <div>Services</div>
+                            <img src="icons/plussign.png" class="plussign">
+                        </div>
+                        <ul>
+                            <a href="https://www.mcdonalds.com/us/en-us/services.html">
+                                <li>
+                                    Services Overview
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/services/free-wi-fi.html">
+                                <li>
+                                    Wi&#45;Fi
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/services/playplaces-and-parties.html">
+                                <li>
+                                    PlayPlaces &#38; Parties
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/mcdelivery.html">
+                                <li>
+                                    McDelivery&#174;
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/mobile-order-and-pay.html">
+                                <li>
+                                    Mobile Order &#38; Pay
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/whats-hot.html">
+                                <li>
+                                    Trending Now
+                                </li>
+                            </a>
+                            <a href="https://goldenarchesunlimited.com/">
+                                <li>
+                                    McDonald&#39;s Merchandise
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/family-fun-hub.html">
+                                <li>
+                                    Family Fun Hub
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/mymcdonalds.html">
+                                <li>
+                                    McDonald&#39;s Rewards
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/mccafe.html">
+                                <li>
+                                    McCafé&#174;
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="list-header">
+                            <div>Community</div>
+                            <img src="icons/plussign.png" class="plussign">
+                        </div>
+                        <ul>
+                            <a href="https://www.mcdonalds.com/us/en-us/community.html">
+                                <li>
+                                    Community Overview
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/now-serving.html">
+                                <li>
+                                    Now Serving
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/community/hacer.html">
+                                <li>
+                                    HACER&#174; Scholarships for Hispanic Students
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/community/giving-back-with-ronald-mcdonald-house.html">
+                                <li>
+                                    Ronald McDonald House Charities
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/asian-pacific-americans.html">
+                                <li>
+                                    McDonald&#39;s Asian Pacific American
+                                </li>
+                            </a>
+                            <a href="https://corporate.mcdonalds.com/corpmcd.html">
+                                <li>
+                                    McDonald&#39;s International
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/black-and-positively-golden.html">
+                                <li>
+                                    Black and Positively Golden
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/community/lgbtq-plus.html">
+                                <li>
+                                    McDonald&#39;s LGBTQ&#43;
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="list-header">
+                            <div>Contact Us</div>
+                            <img src="icons/plussign.png" class="plussign">
+                        </div>
+                        <ul>
+                            <a href="https://www.mcdonalds.com/us/en-us/contact-us.html">
+                                <li>
+                                    Contact Us Overview
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/faq/arch-card.html">
+                                <li>
+                                    Gift Card FAQs
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/faq/business.html#donation">
+                                <li>
+                                    Donations
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/faq/employment.html">
+                                <li>
+                                    Employment
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/feedback.html">
+                                <li>
+                                    Customer Feedback
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/faq.html">
+                                <li>
+                                    Frequently Asked Questions
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </section>
+                <section class="icons-flexbox">
+                    <div>
+                        <a href="https://www.facebook.com/McDonalds/">
+                            <img src="icons/facebook.png" class="social-media-icons">
+                        </a>
+                        <a href="https://www.x.com/McDonalds">
+                            <img src="icons/x.png" class="social-media-icons">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCRI5ZedBs0_BYY4PlxD6m7w">
+                            <img src="icons/youtube.png" class="social-media-icons">
+                        </a>
+                        <a href="https://www.instagram.com/mcdonalds/">
+                            <img src="icons/instagram.png" class="social-media-icons">
+                        </a>
+                        <a href="https://mcdonalds.tumblr.com/">
+                            <img src="icons/tumblr.png" class="social-media-icons">
+                        </a>
+                        <a href="https://open.spotify.com/user/mcdonalds">
+                            <img src="icons/spotify.png" class="social-media-icons">
+                        </a>
+                    </div>
+                    <div class="app-icons-container">
+                        <a href="https://itunes.apple.com/us/app/mcdonalds-mobile/id922103212?mt=8">
+                            <img src="icons/app_store_badge (1).png" class="app-icons">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.mcdonalds.app&hl=en">
+                            <img src="icons/google_play_badge.png" class="app-icons"> 
+                        </a>   
+                    </div>
+                </section>
+                <footer>
+                    <div>
+                        <ul>
+                            <a href="https://www.mcdonalds.com/us/en-us/privacy-overview.html">
+                                <li>
+                                    Privacy &#40;Updated&#41;
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/california-privacy-notice.html">
+                                <li>
+                                    California Privacy Notice
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/terms-and-conditions.html">
+                                <li>
+                                    Terms &#38; Conditions
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/accessibility.html">
+                                <li>
+                                    Accessibility
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/privacy/do-not-sell-my-personal-information.html">
+                                <li>
+                                    Do Not Sell or Share My Personal Information
+                                </li>
+                            </a>
+                            <a href="https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-food-experts.html#">
+                                <li>
+                                    Cookies Settings
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="nested-flexbox">
+                        <div>
+                            <img src="icons/arches-logo_108x108.jpg" class="arches-logo">
+                        </div>
+                        <div>
+                            <div class="copyright-text">
+                                &#169; 2017 &#45; 2023 McDonald&#39;s&#46; All Rights Reserved
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>
