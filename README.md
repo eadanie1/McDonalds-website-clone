@@ -12,7 +12,7 @@ I have structured the website using the appropriate layout, such as grid or flex
 
 ## Special CSS features
 
-Certain featues that I have focused on, apart from the general HTML and CSS, are button :hover and :active functions, as well as tooltips for the first three links in the main body content. Media queries have been added for a responsive design to adjust to different screen sizes. 
+Certain features that I have focused on, apart from the general HTML and CSS, are the button :active function and tooltips for the first three links in the main body content. Media queries have been added for a responsive design to adjust to different screen sizes. 
 
 ## Additional notes
 
