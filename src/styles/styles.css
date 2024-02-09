@@ -277,7 +277,8 @@ h1{
     text-align: center;
 }
 
-.main-photo{
+.main-photo, figure {
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,13 +305,15 @@ h1{
     width: 100%;
 }
 
-.grid-title{
+.grid-title, h2 {
+    margin: 0;
     font-size: 36px;
     font-weight: 700;
     padding:45px 0 18px 0;
 }
 
 .grid-description{
+    margin: 0;
     padding: 18px 0 0 0;
     line-height: 24px;
 }
@@ -349,7 +352,9 @@ h1{
     padding: 0 20px;
 }
 
-.list-header{
+.list-header, h4 {
+    margin: 0;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 18px;
 }
