@@ -1,0 +1,183 @@
+
+@import 'partials/variables';
+
+/*FOOTER*/
+
+footer{
+  border-top: 1px solid rgb(206,206,206);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 48px 20px 104px 20px;
+}
+
+footer ul{
+  padding: 0;
+  display: inline;
+}
+
+footer li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 40px 0 0;
+  height: 44px;
+}
+
+.nested-flexbox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arches-logo{
+  width: 28px;
+  vertical-align: bottom;
+}
+
+.copyright-text, small {
+  display: flex;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: right;
+  padding: 12px 0 0 44px;
+  width: 280px;
+}
+
+@media (max-width:1024px) {
+  header{
+      height: 48px;
+      padding-top: 0;
+  }
+
+  .arches-header-logo{
+      width: 48px;
+      height: 48px;
+  }
+
+  .header-top-links{
+      display: none;
+  }
+
+  .top-header-links-container{
+      padding-right: 12px;
+  }
+
+  .order-now-button{
+      margin-top: 6px;
+      padding: 6px 16px;
+      font-size: 14px;
+  }
+
+  .bottom-header-links-container{
+      display: none;
+  }
+
+  .main-content-container{
+      padding-top: 26px;
+  }
+
+  h1{
+      font-size: 36px;
+      margin-bottom: 30px;
+  }
+
+  .triple-grid-container{
+      display: grid;
+      grid-template-columns: 1fr;
+
+  }
+
+  .experts-info-text{
+      margin-left: 12px;
+      margin-right: 12px;
+      margin-bottom: 114px;
+  }
+
+  .buttons-triple-grid{
+      display: none;
+  }
+
+  .grid-title{
+      font-size: 28px;
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-bottom: 0;
+  }
+
+  .grid-description{
+      padding-left: 14px;
+      padding-right: 14px;
+  }
+
+  .icons-flexbox{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .app-icons-container{
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 300px;
+  }
+
+  .unordered-list-flexbox li{
+      display: none;
+  }
+
+  .unordered-list-flexbox{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .list-header{
+      font-weight: 400;
+      font-size: 18px;
+  }
+
+  footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 44px;
+  }
+
+  footer ul{
+      display: flex;
+      justify-content: center;
+      max-width: 1000px;
+  }
+
+  footer li{ 
+      white-space: nowrap;
+      margin: 0 -6px;
+  }
+
+  .list-header{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  footer {
+      font-size: 12px;
+  }
+}/*Disregarded certain image/icon settings from the original
+website as the had most likely incorrectly missed object-fit:cover, etc,
+as images were strangely off-centered and very zoomed in at this
+browser window width*/
+
+@media (min-width:1024.1px){
+  .hamburger-menu{
+      display: none;
+  }
+
+  .grid-buttons-media{
+      display: none;
+  }
+
+  .plussign{
+      display: none;
+  }
+}

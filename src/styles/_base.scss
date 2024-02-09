@@ -1,0 +1,19 @@
+
+@import 'partials/variables';
+
+/*GENERAL*/
+
+body{
+  margin: 0;
+  font: $primary-font-properties;
+  color: rgb(41,41,41);
+}
+
+a{
+  color: rgb(41,41,41);
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+}
