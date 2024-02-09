@@ -1,0 +1,137 @@
+
+@import 'normalize';
+@import 'partials/variables';
+@import 'base';
+@import 'layout';
+@import 'header';
+
+/*MAIN CONTENT*/
+
+.main-flexbox-container{
+    display: flex;
+    justify-content: center;
+}
+
+.main-content-container{
+    padding: 63px 12px 0 12px;
+    max-width: 1170px;
+}
+
+h1{
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 44px;
+    text-align: center;
+}
+
+.main-photo, figure {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-experts-main-image{
+    width: 100%;
+}
+
+.experts-info-text{
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 116px;
+    margin-bottom: 135px;
+}
+
+.triple-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 23px;
+}
+
+.grid-image{
+    width: 100%;
+}
+
+.grid-title, h2 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    padding:45px 0 18px 0;
+}
+
+.grid-description{
+    margin: 0;
+    padding: 18px 0 0 0;
+    line-height: 24px;
+}
+
+.grid-buttons{
+    background-color: rgb(255, 188, 13);
+    border: none;
+    border-radius: 4px;
+    margin-top: 35px;
+    padding: 13px 25px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.grid-buttons-media{
+    background-color: rgb(255, 188, 13);
+    border: none;
+    border-radius: 4px;
+    margin: 24px 14px 86px 14px;
+    padding: 13px 25px;
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.buttons-triple-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 23px;
+    margin-bottom: 158px;
+}
+
+.unordered-list-flexbox{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.list-header, h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.plussign{
+    width: 16px;
+    height: 16px;
+}
+
+.unordered-list-flexbox ul{
+    padding: 0;
+}
+
+.unordered-list-flexbox li{
+    list-style-type: none;
+    width: 180px;
+    margin-bottom: 6px;
+}
+
+.icons-flexbox{
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0 42px 0;
+    padding: 0 20px;
+}
+
+.social-media-icons{
+    margin-right: 17px;
+}
+
+.app-icons{
+    margin-right: 6px;
+}
