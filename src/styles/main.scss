@@ -2,14 +2,13 @@
 @import 'normalize';
 @import 'partials/variables';
 @import 'base';
-@import 'layout';
 @import 'header';
+@import 'layout';
 
 /*MAIN CONTENT*/
 
 .main-flexbox-container{
-    display: flex;
-    justify-content: center;
+    @extend %shared-layout-justify;
 }
 
 .main-content-container{
@@ -25,10 +24,9 @@ h1{
 }
 
 .main-photo, figure {
-    margin: 0;
-    display: flex;
-    align-items: center;
+    @extend %shared-layout-align;
     justify-content: center;
+    margin: 0;
 }
 
 .food-experts-main-image{
@@ -66,7 +64,7 @@ h1{
 }
 
 .grid-buttons{
-    background-color: rgb(255, 188, 13);
+    background-color: $main-buttons-background-color;
     border: none;
     border-radius: 4px;
     margin-top: 35px;
@@ -76,7 +74,7 @@ h1{
 }
 
 .grid-buttons-media{
-    background-color: rgb(255, 188, 13);
+    background-color: $main-buttons-background-color;
     border: none;
     border-radius: 4px;
     margin: 24px 14px 86px 14px;
@@ -94,8 +92,7 @@ h1{
 }
 
 .unordered-list-flexbox{
-    display: flex;
-    justify-content: space-between;
+    @extend %shared-layout-between;
     padding: 0 20px;
 }
 
@@ -122,8 +119,7 @@ h1{
 }
 
 .icons-flexbox{
-    display: flex;
-    justify-content: space-between;
+    @extend %shared-layout-between;
     margin: 32px 0 42px 0;
     padding: 0 20px;
 }

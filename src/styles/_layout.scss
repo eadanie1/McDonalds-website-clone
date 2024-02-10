@@ -4,9 +4,8 @@
 /*FOOTER*/
 
 footer{
-  border-top: 1px solid rgb(206,206,206);
-  display: flex;
-  justify-content: space-between;
+  border-top: 1px solid $footer-border-color;
+  @extend %shared-layout-between;
   align-items: start;
   padding: 48px 20px 104px 20px;
 }
@@ -24,9 +23,8 @@ footer li{
 }
 
 .nested-flexbox{
-  display: flex;
+  @extend %shared-layout-align;
   justify-content: space-between;
-  align-items: center;
 }
 
 .arches-logo{
@@ -43,6 +41,7 @@ footer li{
   width: 280px;
 }
 
+// Media queries
 @media (max-width:1024px) {
   header{
       height: 48px;
@@ -93,10 +92,6 @@ footer li{
       margin-bottom: 114px;
   }
 
-  .buttons-triple-grid{
-      display: none;
-  }
-
   .grid-title{
       font-size: 28px;
       padding-left: 14px;
@@ -111,8 +106,8 @@ footer li{
 
   .icons-flexbox{
       display: flex;
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
   }
 
   .app-icons-container{
@@ -163,17 +158,15 @@ footer li{
   footer {
       font-size: 12px;
   }
-}/*Disregarded certain image/icon settings from the original
-website as the had most likely incorrectly missed object-fit:cover, etc,
-as images were strangely off-centered and very zoomed in at this
-browser window width*/
+}
+
+/* Disregarded certain image/icon settings from the original
+website as it seemed they had possibly missed object-fit:cover, etc,
+as images were strangely off-centered and very zoomed in at above
+browser window width */
 
 @media (min-width:1024.1px){
   .hamburger-menu{
-      display: none;
-  }
-
-  .grid-buttons-media{
       display: none;
   }
 

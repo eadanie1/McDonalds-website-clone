@@ -4,43 +4,38 @@
 /*HEADER*/
 
 header{
+  @extend %shared-layout-justify;
   height: 118px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.06);
-  display: flex;
-  justify-content: center;
+  box-shadow: 0 2px 5px rgb($shadow-overlay-theme-color, 0.06);
   padding: 15px 0 0 0;
 }
 
 .header-container{
-  width: 1170px;
   display: grid;
+  justify-content: space-between;
+  width: 1170px;
   grid-template-columns: 108px 1fr;
   column-gap: 62px;
-  justify-content: space-between;
   padding: 0 0 0 0;
 }
 
 .header-main-links-container{
-  display: flex;
+  @extend %shared-layout-between;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .top-header-links-container{
-  display: flex;
-  justify-content: space-between;
+  @extend %shared-layout-between;
   font-size: 14px;
   padding: 0 40px 0 0;
 }
 
 .top-left-header-links-container{
-  display: flex;
-  align-items: center;
+  @extend %shared-layout-align;
 }
 
 .top-right-header-links-container{
-  display: flex;
-  align-items: center;
+  @extend %shared-layout-align;
 }
 
 .hamburger-menu{
@@ -77,9 +72,8 @@ header{
 }
 
 .search-link{
-  display: flex;
+  @extend %shared-layout-align;
   justify-content: center;
-  align-items: center;
   text-decoration: none;
 }
 
@@ -89,15 +83,14 @@ header{
 }
 
 .location-link{
-  color: rgb(0,107,174);
-  display: flex;
+  @extend %shared-layout-align;
   justify-content: center;
-  align-items: center;
+  color: $location-link-color;
   text-decoration: underline;
 }
 
 .order-now-button{
-  background-color: rgb(255, 188, 13);
+  background-color: $main-buttons-background-color;
   border: none;
   border-radius: 4px;
   padding: 8px 25px;
@@ -106,20 +99,19 @@ header{
 }
 
 .overlay{
+  @extend %shared-layout-align;
+  justify-content: center;
   position: fixed;
-  background-color: rgba(0,0,0,0);
+  background-color: rgb($shadow-overlay-theme-color, 0);
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;  
-  display: flex;
-  align-items: center;
-  justify-content: center;
   z-index: -1;
 }
 
 .order-now-button:active .overlay{
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb($shadow-overlay-theme-color, 0.4);
   z-index: 50;
 }
 
@@ -129,15 +121,14 @@ header{
 }
 
 .modal{
+  @extend %shared-layout-align;
+  flex-direction: column;
   background-color: white;
   width: 780px;
   height: 820px;
   border-radius: 4px;
-  box-shadow: -15px 15px 30px rgba(0,0,0,0.25), 
-              15px 15px 30px rgba(0,0,0,0.25);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-shadow: -15px 15px 30px rgb($shadow-overlay-theme-color, 0.25), 
+              15px 15px 30px rgb($shadow-overlay-theme-color, 0.25);
   opacity: 0;
   z-index: -1;
 }
@@ -157,7 +148,7 @@ header{
 
 .modal-icons{
   width: 120px;
-  margin: 66px 0 036px 0;
+  margin: 66px 0 36px 0;
 }
 
 .radio-title{
@@ -179,14 +170,13 @@ header{
 }
 
 .modal-faded{
-  color: rgba(0,0,0,0.3)
+  color: rgb($shadow-overlay-theme-color, 0.3);
 }
 
 .modal-read-more{
+  @extend %shared-layout-align;
   margin-top: 8px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .modal-downarrow{
@@ -195,16 +185,15 @@ header{
 }
 
 .flexbox-modal-fake-buttons{
-  display: flex;
-  align-items: center;
+  @extend %shared-layout-align;
   justify-content: space-between;
   padding: 0 15px;
   margin-top: 48px;
 }
 
 .modal-button1{
-  background-color: rgb(255, 255,255);
-  border: 1px solid rgb(200,200,200);
+  @include theme;
+  background-color: $modal-button-background-color;
   border-radius: 4px;
   padding: 13px 57px;
   font-size: 16px;
@@ -212,7 +201,7 @@ header{
 }
 
 .modal-button2{
-  background-color: rgb(255, 188, 13);
+  background-color: $main-buttons-background-color;
   border: none;
   border-radius: 4px;
   padding: 13px 57px;
@@ -236,6 +225,5 @@ header{
 }
 
 .header-logo-container{
-  display: flex;
-  align-items: center;
+  @extend %shared-layout-align;
 }
