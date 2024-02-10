@@ -23,47 +23,47 @@ h1{
     text-align: center;
 }
 
-.main-photo, figure {
+.main-content-container__main-photo, figure {
     @extend %shared-layout-align;
     justify-content: center;
     margin: 0;
 }
 
-.food-experts-main-image{
+.main-content-container__food-experts-main-image{
     width: 100%;
 }
 
-.experts-info-text{
+.main-content-container__experts-info-text{
     font-size: 20px;
     line-height: 22px;
     margin-top: 116px;
     margin-bottom: 135px;
 }
 
-.triple-grid-container{
+.main-content-container__triple-grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 23px;
 }
 
-.grid-image{
+.main-content-container__grid-image{
     width: 100%;
 }
 
-.grid-title, h2 {
+.main-content-container__grid-title, h2 {
     margin: 0;
     font-size: 36px;
     font-weight: 700;
     padding:45px 0 18px 0;
 }
 
-.grid-description{
+.main-content-container__grid-description{
     margin: 0;
     padding: 18px 0 0 0;
     line-height: 24px;
 }
 
-.grid-buttons{
+.main-content-container__grid-buttons{
     background-color: $main-buttons-background-color;
     border: none;
     border-radius: 4px;
@@ -73,61 +73,50 @@ h1{
     line-height: 24px;
 }
 
-.grid-buttons-media{
-    background-color: $main-buttons-background-color;
-    border: none;
-    border-radius: 4px;
-    margin: 24px 14px 86px 14px;
-    padding: 13px 25px;
-    font-size: 16px;
-    line-height: 24px;
-    font-size: 14px;
-}
-
-.buttons-triple-grid{
+.main-content-container__buttons-triple-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 23px;
     margin-bottom: 158px;
 }
 
-.unordered-list-flexbox{
+.main-content-container__unordered-list-flexbox{
     @extend %shared-layout-between;
     padding: 0 20px;
 }
 
-.list-header, h4 {
+.main-content-container__list-header, h4 {
     margin: 0;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 18px;
 }
 
-.plussign{
+.main-content-container__plussign{
     width: 16px;
     height: 16px;
 }
 
-.unordered-list-flexbox ul{
+.main-content-container__unordered-list-flexbox ul{
     padding: 0;
 }
 
-.unordered-list-flexbox li{
+.main-content-container__unordered-list-flexbox li{
     list-style-type: none;
     width: 180px;
     margin-bottom: 6px;
 }
 
-.icons-flexbox{
+.main-content-container__icons-flexbox{
     @extend %shared-layout-between;
     margin: 32px 0 42px 0;
     padding: 0 20px;
 }
 
-.social-media-icons{
+.main-content-container__social-media-icons{
     margin-right: 17px;
 }
 
-.app-icons{
+.main-content-container__app-icons{
     margin-right: 6px;
 }

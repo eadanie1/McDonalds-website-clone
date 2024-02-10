@@ -3,36 +3,36 @@
 
 /*FOOTER*/
 
-footer{
+.footer{
   border-top: 1px solid $footer-border-color;
   @extend %shared-layout-between;
   align-items: start;
   padding: 48px 20px 104px 20px;
 }
 
-footer ul{
+.footer ul{
   padding: 0;
   display: inline;
 }
 
-footer li{
+.footer li{
   display: inline-block;
   list-style-type: none;
   padding: 0 40px 0 0;
   height: 44px;
 }
 
-.nested-flexbox{
+.footer__nested-flexbox{
   @extend %shared-layout-align;
   justify-content: space-between;
 }
 
-.arches-logo{
+.footer__arches-logo{
   width: 28px;
   vertical-align: bottom;
 }
 
-.copyright-text, small {
+.footer__copyright-text, small {
   display: flex;
   font-size: 16px;
   line-height: 16px;
@@ -43,31 +43,31 @@ footer li{
 
 // Media queries
 @media (max-width:1024px) {
-  header{
+  .header{
       height: 48px;
       padding-top: 0;
   }
 
-  .arches-header-logo{
+  .header__arches-header-logo{
       width: 48px;
       height: 48px;
   }
 
-  .header-top-links{
+  .header__top-links{
       display: none;
   }
 
-  .top-header-links-container{
+  .header__top-links-container{
       padding-right: 12px;
   }
 
-  .order-now-button{
+  .header__order-now-button{
       margin-top: 6px;
       padding: 6px 16px;
       font-size: 14px;
   }
 
-  .bottom-header-links-container{
+  .header__bottom-links-container{
       display: none;
   }
 
@@ -80,58 +80,58 @@ footer li{
       margin-bottom: 30px;
   }
 
-  .triple-grid-container{
+  .main-content-container__triple-grid-container{
       display: grid;
       grid-template-columns: 1fr;
 
   }
 
-  .experts-info-text{
+  .main-content-container__experts-info-text{
       margin-left: 12px;
       margin-right: 12px;
       margin-bottom: 114px;
   }
 
-  .grid-title{
+  .main-content-container__grid-title{
       font-size: 28px;
       padding-left: 14px;
       padding-right: 14px;
       padding-bottom: 0;
   }
 
-  .grid-description{
+  .main-content-container__grid-description{
       padding-left: 14px;
       padding-right: 14px;
   }
 
-  .icons-flexbox{
+  .main-content-container__icons-flexbox{
       display: flex;
       align-items: center;
       flex-direction: column;
   }
 
-  .app-icons-container{
+  .main-content-container__app-icons-container{
       margin-top: 24px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 300px;
   }
 
-  .unordered-list-flexbox li{
+  .main-content-container__unordered-list-flexbox li{
       display: none;
   }
 
-  .unordered-list-flexbox{
+  .main-content-container__unordered-list-flexbox{
       display: flex;
       flex-direction: column;
   }
 
-  .list-header{
+  .main-content-container__list-header{
       font-weight: 400;
       font-size: 18px;
   }
 
-  footer{
+  .footer{
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -139,23 +139,23 @@ footer li{
       padding-bottom: 44px;
   }
 
-  footer ul{
+  .footer ul{
       display: flex;
       justify-content: center;
       max-width: 1000px;
   }
 
-  footer li{ 
+  .footer li{ 
       white-space: nowrap;
       margin: 0 -6px;
   }
 
-  .list-header{
+  .main-content-container__list-header{
       display: flex;
       justify-content: space-between;
   }
 
-  footer {
+  .footer {
       font-size: 12px;
   }
 }
@@ -166,11 +166,11 @@ as images were strangely off-centered and very zoomed in at above
 browser window width */
 
 @media (min-width:1024.1px){
-  .hamburger-menu{
+  .header__hamburger-menu{
       display: none;
   }
 
-  .plussign{
+  .main-content-container__plussign{
       display: none;
   }
 }
