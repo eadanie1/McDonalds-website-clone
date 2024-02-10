@@ -3,14 +3,14 @@
 
 /*HEADER*/
 
-header{
+.header{
   @extend %shared-layout-justify;
   height: 118px;
   box-shadow: 0 2px 5px rgb($shadow-overlay-theme-color, 0.06);
   padding: 15px 0 0 0;
 }
 
-.header-container{
+.header__container{
   display: grid;
   justify-content: space-between;
   width: 1170px;
@@ -19,77 +19,81 @@ header{
   padding: 0 0 0 0;
 }
 
-.header-main-links-container{
+.header__logo-container{
+  @extend %shared-layout-align;
+}
+
+.header__main-links-container{
   @extend %shared-layout-between;
   flex-direction: column;
 }
 
-.top-header-links-container{
+.header__top-links-container{
   @extend %shared-layout-between;
   font-size: 14px;
   padding: 0 40px 0 0;
 }
 
-.top-left-header-links-container{
+.header__top-left-links-container{
   @extend %shared-layout-align;
 }
 
-.top-right-header-links-container{
+.header__top-right-links-container{
   @extend %shared-layout-align;
 }
 
-.hamburger-menu{
+.header__hamburger-menu-icon{
   width: 22px;
   margin-left: 10px;
 }
 
-.header-top-links{
+.header__top-links{
   margin: 0 30px 0 0;
 }
 
-.header-bottom-links{
+.header__bottom-links{
   margin: 0 25px 0 0;
 }
 
-.link-text{
+.header__link-text{
   line-height: 0px;
 }
 
-.down-arrow-small-icon{
+.header__down-arrow-small-icon{
   margin-left: 5px;
   width: 9px;
 }
 
-.down-arrow-large-icon{
+.header__down-arrow-large-icon{
   margin-left: 5px;
   width: 12px;
 }
 
-.search-icon{
+.header__search-icon{
   width: 16px;
   height: 15px;
   margin-right: 5px;
 }
 
-.search-link{
+.header__search-link{
   @extend %shared-layout-align;
   justify-content: center;
   text-decoration: none;
 }
 
-.location-pin-icon{
+.header__location-pin-icon{
   width: 17px;
   margin-right: 5px;
 }
 
-.location-link{
+.header__location-link{
   @extend %shared-layout-align;
   justify-content: center;
   color: $location-link-color;
   text-decoration: underline;
 }
 
-.order-now-button{
+.header__order-now-button{
   background-color: $main-buttons-background-color;
   border: none;
   border-radius: 4px;
@@ -98,7 +102,7 @@ header{
   line-height: 24px;
 }
 
-.overlay{
+.header__overlay{
   @extend %shared-layout-align;
   justify-content: center;
   position: fixed;
@@ -110,17 +114,17 @@ header{
   z-index: -1;
 }
 
-.order-now-button:active .overlay{
+.header__order-now-button:active .header__overlay{
   background-color: rgb($shadow-overlay-theme-color, 0.4);
   z-index: 50;
 }
 
-.order-now-button:active .modal{
+.header__order-now-button:active .header__modal{
   opacity: 1;
   z-index: 50;
 }
 
-.modal{
+.header__modal{
   @extend %shared-layout-align;
   flex-direction: column;
   background-color: white;
@@ -133,35 +137,35 @@ header{
   z-index: -1;
 }
 
-.modal-title{
+.header__modal-title{
   font-size: 24px;
   font-weight: 700;
   margin: 48px 0 40px 0;
 }
 
-.modal-radio-grid{
+.header__modal-radio-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 50px;
   align-items: center;
 }
 
-.modal-icons{
+.header__modal-icons{
   width: 120px;
   margin: 66px 0 36px 0;
 }
 
-.radio-title{
+.header__radio-title{
   font-size: 12px;
   margin-bottom: 8px;
 }
 
-.radio-button{
+.header__radio-button{
   width: 24px;
   height: 24px;
 }
 
-.modal-disclaimer{
+.header__modal-disclaimer{
   font-size: 11px;
   width: 400px;
   margin-top: 32px;
@@ -169,29 +173,29 @@ header{
   line-height: 16px;
 }
 
-.modal-faded{
+.header__modal-faded{
   color: rgb($shadow-overlay-theme-color, 0.3);
 }
 
-.modal-read-more{
+.header__modal-read-more{
   @extend %shared-layout-align;
   margin-top: 8px;
   flex-direction: column;
 }
 
-.modal-downarrow{
+.header__modal-downarrow{
   width: 16px;
   margin-top: 8px;
 }
 
-.flexbox-modal-fake-buttons{
+.header__flexbox-modal-fake-buttons{
   @extend %shared-layout-align;
   justify-content: space-between;
   padding: 0 15px;
   margin-top: 48px;
 }
 
-.modal-button1{
+.header__modal-button1{
   @include theme;
   background-color: $modal-button-background-color;
   border-radius: 4px;
@@ -200,7 +204,7 @@ header{
   line-height: 24px;
 }
 
-.modal-button2{
+.header__modal-button2{
   background-color: $main-buttons-background-color;
   border: none;
   border-radius: 4px;
@@ -209,21 +213,17 @@ header{
   line-height: 24px;
 }
 
-.bottom-header-links-container{
+.header__bottom-links-container{
   display: flex;
   padding-bottom: 15px;
 }
 
-.bottom-header-links-container ul{
+.header__bottom-links-container ul{
   display: inline;
   padding: 0;
 }
 
-.bottom-header-links-container li{
+.header__bottom-links-container li{
   list-style-type: none;
   display: inline;
-}
-
-.header-logo-container{
-  @extend %shared-layout-align;
 }
