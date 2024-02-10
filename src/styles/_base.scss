@@ -6,11 +6,11 @@
 body{
   margin: 0;
   font: $primary-font-properties;
-  color: rgb(41,41,41);
+  color: $primary-color;
 }
 
 a{
-  color: rgb(41,41,41);
+  color: $primary-color;
   text-decoration: none;
 }
 
